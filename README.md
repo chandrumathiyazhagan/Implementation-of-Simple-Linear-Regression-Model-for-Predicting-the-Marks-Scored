@@ -83,10 +83,15 @@ print('RMSE = ',rmse)
 ```
 ## Output:
 ![Screenshot 2024-02-23 082717](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/cf358a6d-b8db-4eca-a202-a47ad5cb4c49)
+
 ![Screenshot 2024-02-23 082724](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/860716ce-33ab-4bc8-a96c-6c7e6ac8d8be)
+
 ![Screenshot 2024-02-23 082733](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/80b38ef6-fd25-4a74-91c2-37963bb17faa)
+
 ![Screenshot 2024-02-23 082845](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/c2caf94a-083d-4da4-8e1a-460675df7d7b)
+
 ![Screenshot 2024-02-23 082918](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/9267f523-bdf9-4397-a9cd-c937264d1770)
+
 ![Screenshot 2024-02-23 081606](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/632f01d8-a3f2-493f-ae7a-afc4948f1358)
 
 
