@@ -33,70 +33,53 @@ RegisterNumber:  212222230026
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics import mean_absolute_error , mean_squared_error
-df=pd.read_csv('MLCSV.csv')
-df.head()
+df=pd.read_csv('/content/ml.csv')
+df.head(10)
 ```
 ```python
-df.tail()
+plt.scatter(df['x'],df['y'])
+plt.xlabel('x')
+plt.ylabel('y')
 ```
 ```python
-X= df.iloc[:,0:-1].values
-X
-```
-```python
-Y = df.iloc[:,1].values
-Y
-```
-```python
+x=df.iloc[:,0:-1]
+y=df.iloc[:,-1]
 from sklearn.model_selection import train_test_split
-X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
+x_train
+y_train
 ```
 ```python
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
 from sklearn.linear_model import LinearRegression
-regressor=LinearRegression()
-regressor.fit(X_train,Y_train)
-Y_pred=regressor.predict(X_test)
-Y_pred
+lr=LinearRegression()
+lr.fit(x_train,y_train)
+x_train
+y_train
+lr.predict(x_test.iloc[0].values.reshape(1,1))
+plt.scatter(df['x'],df['y'])
+plt.xlabel('x')
+plt.ylabel('y')
+plt.plot(x_train,lr.predict(x_train),color='orange')
 ```
 ```python
-plt.scatter(X_train,Y_train,color="red")
-plt.plot(X_train,regressor.predict(X_train),color="black")
-plt.title("Hours vs Scores (Training Set)")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.show()
+lr.coef_
 ```
 ```python
-plt.scatter(X_test,Y_test,color="purple")
-plt.plot(X_test,regressor.predict(X_test),color="yellow")
-plt.title("Hours vs scores (test set)")
-plt.xlabel("x")
-plt.ylabel("y")
-plt.show()
+lr.intercept_
 ```
-```python
-mse=mean_squared_error(Y_test,Y_pred)
-print('MSE = ',mse)
-mae=mean_absolute_error(Y_test,Y_pred)
-print('MAE = ',mae)
-rmse=np.sqrt(mse)
-print('RMSE = ',rmse)
-```
+
 ## Output:
-![Screenshot 2024-02-23 082717](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/cf358a6d-b8db-4eca-a202-a47ad5cb4c49)
 
-![Screenshot 2024-02-23 082724](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/860716ce-33ab-4bc8-a96c-6c7e6ac8d8be)
+![Screenshot 2024-04-01 202900](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/b30b5975-f091-4bff-9eb7-40ad304e5840)
 
-![Screenshot 2024-02-23 082733](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/80b38ef6-fd25-4a74-91c2-37963bb17faa)
+![Screenshot 2024-04-01 202911](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/b1e19387-365b-4090-ad33-b1c7ed7b75c8)
 
-![Screenshot 2024-02-23 082845](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/c2caf94a-083d-4da4-8e1a-460675df7d7b)
+![Screenshot 2024-04-01 202919](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/b4942083-e431-4e11-a9da-f978821a8a4c)
 
-![Screenshot 2024-02-23 082918](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/9267f523-bdf9-4397-a9cd-c937264d1770)
+![Screenshot 2024-04-01 203006](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/01b0584a-4c56-4349-b914-0d88173d079c)
 
-![Screenshot 2024-02-23 081606](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/632f01d8-a3f2-493f-ae7a-afc4948f1358)
-
-
+![Screenshot 2024-04-01 203029](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/61b1489e-523c-4b78-b7b3-136cb172762b)
 
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
