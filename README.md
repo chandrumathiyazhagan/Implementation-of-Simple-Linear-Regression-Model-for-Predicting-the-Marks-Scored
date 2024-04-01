@@ -71,18 +71,23 @@ lr.intercept_
 
 ## Output:
 ### 1)HEAD:
+
 ![Screenshot 2024-04-01 202900](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/b30b5975-f091-4bff-9eb7-40ad304e5840)
 
 ### 2)GRAPH OF PLOTTED DATA:
+
 ![Screenshot 2024-04-01 202911](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/b1e19387-365b-4090-ad33-b1c7ed7b75c8)
 
 ### 3)TRAINED DATA:
+
 ![Screenshot 2024-04-01 202919](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/b4942083-e431-4e11-a9da-f978821a8a4c)
 
 ### 4)LINE OF REGRESSION:
+
 ![Screenshot 2024-04-01 203006](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/01b0584a-4c56-4349-b914-0d88173d079c)
 
 ### 5)COEFFICIENT AND INTERCEPT VALUES:
+
 ![Screenshot 2024-04-01 203029](https://github.com/chandrumathiyazhagan/Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored/assets/119393023/61b1489e-523c-4b78-b7b3-136cb172762b)
 
 ## Result:
